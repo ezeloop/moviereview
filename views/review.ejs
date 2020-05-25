@@ -1,0 +1,27 @@
+
+<%-include("partials/header");-%>
+<h1>Compose</h1>
+<form class= "" action="/post"method="post">
+
+  <div class="form-group">
+
+  <label >Title</label>
+
+  <input type="text" class="form-control postTitle" name="postTitle" aria-describedby="basic-addon3">
+  
+
+
+<label>Post</label>
+
+<textarea class="form-control postText" name="postText" rows="4" cols="50"></textarea>
+
+
+
+  </div>
+  <input class="btn btn-primary" type="submit" value="Publish">
+</form>
+<script>
+  alert("Remember cannot post empty");
+</script>
+
+<%-include("partials/footer");-%>
